@@ -21,7 +21,7 @@ const ServicesPage = lazy(() => import("./pages/ServicesPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const Industries = lazy(() => import("./pages/Industries"));
 const ServicePageLayout = lazy(() => import("./Layout/ServicePageLayout"));
-// const LandingPage = lazy(() => import("./landingpage/LandingPage"));
+const Thankyou = lazy(() => import("./Components/ThankYou"));
 
 const AppRouter = createBrowserRouter([
   {
@@ -61,6 +61,10 @@ const AppRouter = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactPage />,
+      },
+      {
+        path: "/thank-you",
+        element: <Thankyou />,
       },
     ],
   },
